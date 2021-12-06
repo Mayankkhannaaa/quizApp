@@ -24,6 +24,7 @@ const Home = () => {
   } = useStore();
   const navigate = useNavigate();
 
+  //Prevent user to come back to Home page from Result page
   function preventBack() {
     window.history.forward();
   }

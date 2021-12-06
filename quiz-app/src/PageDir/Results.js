@@ -13,6 +13,7 @@ const Result = () => {
 
   const navigate = useNavigate();
 
+  //Overriding function to restart quiz and navigate with a message
   window.onbeforeunload = function (event) {
     clearState();
     navigate("/");

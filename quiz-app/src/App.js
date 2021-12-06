@@ -34,10 +34,12 @@ function App() {
 
   //operands ["*", "/", "+", "-"];
 
+  //Function to find random number
   function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
+  //Function to create custom questions
   const createQuestions1 = () => {
     let questionArray = [];
     for (let i = 0; i < 10; i++) {
@@ -83,6 +85,7 @@ function App() {
     setQuesionsObject1(questionArray);
   };
 
+  //Function to create custom questions
   const createQuestions2 = () => {
     let questionArray = [];
     for (let i = 0; i < 10; i++) {
@@ -128,6 +131,7 @@ function App() {
     setQuesionsObject2(questionArray);
   };
 
+  //Function to reset states
   const clearState = () => {
     setQuesionsObject1([
       {
@@ -185,7 +189,6 @@ function App() {
       }}
       clearState={clearState}
     >
-      {/* {questionObjects1.length === 10 ? <AppRoutes /> : <div>Loading</div>} */}
       <AppRoutes />
     </MainContextProvider>
   );
