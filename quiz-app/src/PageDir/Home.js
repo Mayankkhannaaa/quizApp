@@ -110,8 +110,6 @@ const Home = () => {
                     {questionObjects1[currentQuesIndex1]?.question}
                   </p>
                   <input
-                    type="number"
-                    step="any"
                     placeholder="Answer"
                     className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     value={textInputValue1}
@@ -232,8 +230,6 @@ const Home = () => {
                     {questionObjects2[currentQuesIndex2]?.question}
                   </p>
                   <input
-                    type="number"
-                    step="any"
                     placeholder="Answer"
                     className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     value={textInputValue2}

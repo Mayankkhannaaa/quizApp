@@ -56,7 +56,7 @@ function App() {
         const num2 = randomNumber(1, 10);
         questionArray.push({
           question: `${num1} / ${num2} = ?`,
-          correctAnswer: num1 / num2,
+          correctAnswer: Math.round(num1 / num2),
           answer: null,
           correctBool: null,
         });
@@ -101,7 +101,7 @@ function App() {
         const num2 = randomNumber(1, 10);
         questionArray.push({
           question: `${num1} / ${num2} = ?`,
-          correctAnswer: num1 / num2,
+          correctAnswer: Math.round(num1 / num2),
           answer: null,
           correctBool: null,
         });
